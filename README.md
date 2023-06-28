@@ -1,1 +1,1 @@
-# Reposiroty for ALX Backend Javascript Projects
+# Repository for ALX Backend Javascript Projects
