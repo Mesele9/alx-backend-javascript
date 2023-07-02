@@ -6,7 +6,7 @@ function handleProfileSignup() {
 
   Promise.all([photoPromise, userPromise])
     .then(([photoPromise, userPromise]) => {
-      console.log(`${photoPromise.body} ${userPromise.firstName} ${userPromise.lastName}`);
+      console.log(photoPromise.body, userPromise.firstName, userPromise.lastName);
     })
     .catch(() => {
       console.log('Signup system offline');
