@@ -22,20 +22,35 @@ class Teacher implements TeacherInterface {
   workTeacherTasks = () => 'Getting to work';
 }
 
-function createEmployee(salary: number | string) {
+export function createEmployee(salary: number | string) {
   if (typeof salary === 'number' && salary < 500)
     return new Teacher();
   return new Director();
 }
 
-function isDirector(employee: Director | Teacher): employee is Director {
+export function isDirector(employee: Director | Teacher): employee is Director {
   return (employee as Director).workDirectorTasks !== undefined;
 }
 
-function executeWork(employee: Director | Teacher) {
+export function executeWork(employee: Director | Teacher) {
   if (isDirector(employee)) {
     console.log(employee.workDirectorTasks());
   } else {
     console.log(employee.workTeacherTasks());
   }
 }
+
+type Subjects = 'Math' | 'History';
+
+export function teachClass(todayClass: Subjects): string {
+  if (todayClass === 'Math') {
+    return 'Teaching Math';
+  } else if (todayClass === 'History') {
+    return 'Teaching History';
+  } else {
+    return 'Invalid Subject';
+  }
+}
+
+console.log(teachClass('Math'));
+console.log(teachClass('History'));
