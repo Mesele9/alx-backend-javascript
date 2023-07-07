@@ -4,3 +4,5 @@ namespace Subjects {
     lastName: string;
   }
 }
+
+export default Subjects;

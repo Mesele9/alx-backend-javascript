@@ -1,7 +1,8 @@
+import Subject from "./Subject";
+import Teacher from "./Teacher";
+
 namespace Subjects {
   export interface Teacher {
-    firstName: string;
-    lastName: string;
     experienceTeachingJava?: number;
   }
 
@@ -19,3 +20,5 @@ namespace Subjects {
     }
   }
 }
+
+export default Subjects.Java;

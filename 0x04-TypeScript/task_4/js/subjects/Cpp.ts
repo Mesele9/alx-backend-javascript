@@ -1,7 +1,8 @@
+import Subject from "./Subject";
+import Teacher from "./Teacher";
+
 namespace Subjects {
   export interface Teacher {
-    firstName: string;
-    lastName: string;
     experienceTeachingC?: number;
   }
 
@@ -11,7 +12,7 @@ namespace Subjects {
     }
 
     getAvailableTeacher(): string {
-      if (this.teacher && this.teacher.experienceTeachingC) {
+      if (this.teacher?.experienceTeachingC) {
         return `Available Teacher: ${this.teacher.firstName}`;
       } else {
         return "No available teacher";
@@ -19,3 +20,5 @@ namespace Subjects {
     }
   }
 }
+
+export default Subjects.Cpp;

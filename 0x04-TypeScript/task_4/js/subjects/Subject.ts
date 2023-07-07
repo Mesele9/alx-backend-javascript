@@ -1,3 +1,5 @@
+import { Teacher } from "./Teacher";
+
 namespace Subjects {
   export class Subject {
     teacher: Teacher;
@@ -7,3 +9,5 @@ namespace Subjects {
     }
   }
 }
+
+export default Subjects.Subject;
