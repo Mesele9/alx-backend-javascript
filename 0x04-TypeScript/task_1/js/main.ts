@@ -30,3 +30,15 @@ const director1: Directors = {
 };
 
 console.log(director1);
+
+function printTeacher(firstName: string, lastName: string): string {
+  const firstLetter = firstName.charAt(0).toUpperCase();
+  const fullName = `${firstLetter}. ${lastName}`;
+  return fullName;
+}
+
+interface printTeacherFunction {
+  (firstName: string, lastName: string): string;
+}
+
+console.log(printTeacher("Mesele", "Assefa"));
