@@ -42,3 +42,24 @@ interface printTeacherFunction {
 }
 
 console.log(printTeacher("Mesele", "Assefa"));
+
+interface Student {
+  firstName: string;
+  lastName: string;
+} 
+
+interface StudentClassInterface {
+  new (firstName: string, lastName: string): StudentClass;
+}
+
+class StudentClass {
+  constructor(public firstName: string, public lastName: string) {}
+
+  workOnHomework(): string {
+    return "Currently working";
+  }
+
+  displayName(): string {
+    return this.firstName;
+  }
+}
