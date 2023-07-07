@@ -51,6 +51,3 @@ export function teachClass(todayClass: Subjects): string {
     return 'Invalid Subject';
   }
 }
-
-console.log(teachClass('Math'));
-console.log(teachClass('History'));
