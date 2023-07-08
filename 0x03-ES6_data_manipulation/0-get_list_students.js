@@ -5,5 +5,3 @@ function getListStudents() {
     { id: 5, firstName: 'Serena', location: 'San Francisco' },
   ];
 }
-
-console.log(getListStudents());
