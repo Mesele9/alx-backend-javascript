@@ -5,5 +5,5 @@ export default function groceriesList() {
   grocerMap.set('Pasta', 1);
   grocerMap.set('Rice', 1);
   grocerMap.set('Banana', 5);
-  return grocerMap; 
+  return grocerMap;
 }
