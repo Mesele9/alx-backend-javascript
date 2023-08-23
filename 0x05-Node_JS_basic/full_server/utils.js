@@ -20,5 +20,4 @@ async fucntion readDatabase(filePath) {
   }
 }
 
-
 module.export = readDatabase;
