@@ -35,5 +35,4 @@ function countStudents(fileName) {
   }
 }
 
-
 module.exports = countStudents;
