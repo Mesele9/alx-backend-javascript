@@ -34,7 +34,7 @@ function countStudents(fileName) {
           }
         }
         resolve(data);
-      }	
+      }
     });
   });
 }
