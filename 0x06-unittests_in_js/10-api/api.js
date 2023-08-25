@@ -30,4 +30,8 @@ const server = app.listen(port, () => {
   console.log(`API available on localhost port ${port}`);
 });
 
-module.exports = server;
+module.exports = app;
+
+module.exports.closeServer = function() {
+  server.close();
+};

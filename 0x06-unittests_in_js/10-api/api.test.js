@@ -1,6 +1,6 @@
 const expect = require('chai').expect;
 const request = require('request');
-const server = require('./api');
+const app = require('./api');
 
 describe('Index page', function() {
   it('Should return correct status code', function(done) {
@@ -73,5 +73,5 @@ describe('/login endpoint', function() {
 });
 
 after(function() {
-  server.close();
-});
+  app.closeServer();
+})
